@@ -1,0 +1,128 @@
+/* General Layout */
+html, body, #root {
+  height: 100%;
+  margin: 0;
+  font-family: Arial, sans-serif;
+  overflow: hidden; /* Prevent double scrollbars */
+}
+
+/* Top Navbar */
+.top-navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 60px;
+  background-color: #222;
+  color: white;
+  display: flex;
+  align-items: center;
+  padding-left: 20px;
+  font-size: 20px;
+  font-weight: bold;
+  z-index: 1000;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* App container below navbar */
+.app-container {
+  padding-top: 60px; /* Same as navbar height */
+  height: 100vh;
+  overflow: hidden;
+}
+
+/* Flex container */
+.d-flex {
+  display: flex;
+  height: calc(100vh - 60px); /* Adjust for navbar */
+}
+
+/* Sidebar styles */
+.sidebar {
+  width: 200px;
+  background-color: #333;
+  color: #fff;
+  transition: width 0.3s ease;
+  padding-top: 20px;
+  height: 100%;
+  position: relative;
+  box-shadow: 2px 0px 5px rgba(0, 0, 0, 0.1);
+}
+
+.sidebar.collapsed {
+  width: 60px;
+}
+
+.sidebar .nav {
+  list-style: none;
+  padding: 0;
+  margin-top: 20px;
+}
+
+.sidebar .nav-link {
+  color: #fff;
+  text-decoration: none;
+  display: block;
+  padding: 12px;
+  font-size: 16px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+  border-radius: 4px;
+}
+
+.sidebar .nav-link:hover {
+  background-color: #555;
+}
+
+/* Hide links when collapsed */
+.sidebar .nav.collapsed {
+  display: none;
+}
+
+/* Hover effect to expand sidebar */
+.sidebar:hover {
+  width: 200px;
+}
+
+.sidebar:hover .nav.collapsed {
+  display: block;
+}
+
+/* Main content area */
+.content {
+  flex: 1;
+  padding: 20px;
+  background-color: #f4f4f4;
+  margin-left: 220px;
+  border-radius: 8px;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+  height: 100%;
+  overflow-y: auto;
+}
+
+/* Adjust content margin when sidebar is collapsed */
+.sidebar.collapsed + .content {
+  margin-left: 60px;
+}
+
+/* Button Styling */
+button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+/* Headings */
+h1 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}

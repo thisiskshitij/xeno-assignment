@@ -1,0 +1,48 @@
+/* frontend/src/components/RuleBuilder.css */
+.rule-builder {
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #fff; /* White background for the builder area */
+}
+
+.rule-builder h2 {
+     margin-top: 0;
+     padding-top: 0;
+     border-bottom: none; /* Remove border from main page h2 */
+     margin-bottom: 15px;
+     color: #333;
+}
+
+.overall-operator {
+    margin-bottom: 20px;
+}
+
+.overall-operator label {
+     margin-right: 10px;
+     display: inline-block; /* Keep label and select on the same line */
+     font-weight: normal; /* Optional: Less bold than main form labels */
+     color: #555;
+}
+
+.overall-operator select {
+     padding: 8px;
+     border: 1px solid #ccc;
+     border-radius: 4px;
+     font-size: 1rem;
+}
+
+.conditions-list {
+    margin-bottom: 20px;
+    /* Add padding/gap if needed between condition rows */
+}
+
+.condition-row-placeholder {
+     border: 1px dashed #999; /* Visual placeholder border */
+     padding: 10px;
+     margin-bottom: 10px;
+     background-color: #f0f0f0;
+     color: #555;
+}
+
+/* Styling for individual ConditionRow will be in ConditionRow.css */

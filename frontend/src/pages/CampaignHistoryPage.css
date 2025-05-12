@@ -1,0 +1,67 @@
+.campaign-history-page {
+    font-family: 'Arial', sans-serif;
+    background-color: #f7f7f7;
+    padding: 40px;
+    max-width: 900px;
+    margin: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.page-title {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.campaign-list {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+}
+
+.campaign-card {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.campaign-card h2 {
+    font-size: 1.25rem;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.campaign-card p {
+    font-size: 1rem;
+    margin: 6px 0;
+    color: #555;
+}
+
+.create-campaign-button {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    font-size: 1rem;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: background-color 0.3s;
+}
+
+.create-campaign-button:hover {
+    background-color: #0056b3;
+}
+
+.loading-message,
+.error-message,
+.no-campaigns-message {
+    text-align: center;
+    font-size: 1.2rem;
+    color: #333;
+}

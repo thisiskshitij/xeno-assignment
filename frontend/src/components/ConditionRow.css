@@ -1,0 +1,35 @@
+/* frontend/src/components/ConditionRow.css */
+.condition-row {
+    display: flex; /* Arrange items horizontally */
+    gap: 10px; /* Space between elements */
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #eee; /* Subtle border for each row */
+    border-radius: 4px;
+    background-color: #fff; /* White background */
+    align-items: center; /* Vertically center items */
+    flex-wrap: wrap; /* Allow items to wrap on smaller screens */
+}
+
+ .condition-row select,
+ .condition-row input[type="text"] {
+     padding: 8px;
+     border: 1px solid #ccc;
+     border-radius: 4px;
+     font-size: 0.9rem; /* Slightly smaller font than main inputs */
+     flex-grow: 1; /* Allow input to grow to fill space */
+ }
+
+ .condition-row button {
+     padding: 8px 12px; /* Smaller padding */
+     background-color: #dc3545; /* Red color for remove */
+     color: white;
+     border: none;
+     border-radius: 4px;
+     cursor: pointer;
+     transition: background-color 0.2s ease;
+ }
+
+ .condition-row button:hover {
+     background-color: #c82333;
+ }
