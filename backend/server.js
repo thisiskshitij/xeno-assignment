@@ -49,7 +49,7 @@ const connectDB = async () => {
 // CORS Middleware (if needed, configure appropriately for your frontend origin)
 // CORS Middleware - Configure to allow your frontend's origin and credentials
 app.use(cors({
-    origin: 'http://localhost:5173', // <-- Replace with your frontend server URL/port
+    origin: 'https://xeno-frontend-production.up.railway.app/', // <-- Replace with your frontend server URL/port
     credentials: true // <-- IMPORTANT: Allow cookies to be sent with requests
 }));
 
