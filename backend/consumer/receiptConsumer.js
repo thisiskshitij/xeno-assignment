@@ -1,9 +1,10 @@
 // consumer/consumerreceipt.js
-require('dotenv').config({ path: './backend/.env' }); // Load environment variables (including DB connection)
+require('dotenv').config({ path: '../.env' }); // Load environment variables (including DB connection)
+// require('dotenv').config({ path: './backend/.env' }); // Load environment variables (including DB connection)
 
 const mongoose = require('mongoose');
-const CommunicationLog = require('./models/CommunicationLog'); // Need to update logs
-const Campaign = require('./models/Campaign'); // <-- **ADD THIS IMPORT** - Need to update campaigns
+const CommunicationLog = require('../models/CommunicationLog'); // Need to update logs
+const Campaign = require('../models/Campaign'); // <-- **ADD THIS IMPORT** - Need to update campaigns
 
 // Import the Google Cloud Pub/Sub client library
 const { PubSub } = require('@google-cloud/pubsub');
